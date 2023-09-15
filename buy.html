@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    /* Header Styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 36px;
+    }
+    
+    /* Form Styles */
+    form {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    form input[type="text"],
+    form input[type="number"],
+    form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    form input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #555;
+    }
+    
+    /* Search Results Styles */
+    #search-results {
+        margin-top: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Property Search</h1>
+    <form action="http://127.0.0.1:5500/" method="GET" id="frmhomesearch">
+        <div class="typesearch" id="hometypesearch">
+        <a href="http://127.0.0.1:5500/">Invest</a>
+        <a href="https://arjun658.github.io/realestate/develop.html">Develop</a>
+        <a href="https://arjun658.github.io/realestate//buy.html">Buy</a>
+        </div>
+        <div class="input-group input-group-lg">
+        <input type="hidden" name="type" value="rent" id="txttypesearch">
+        <div class="input-group-prepend">
+        <span class="input-group-text"><i class="far fa-search"></i></span>
+        </div>
+        <div class="keyword-input">
+        <input type="text" class="form-control" name="k" placeholder="Enter keyword..." id="txtkey" autocomplete="off">
+        <div class="spinner-icon">
+        <i class="fas fa-spin fa-spinner"></i>
+        </div>
+        </div>
+        <div class="input-group-prepend">
+        <span class="input-group-text"><i class="far fa-location"></i></span>
+        </div>
+        <div class="location-input" data-url="
+        <input class="select-city-state form-control" name="location" value="" placeholder="City, State" autocomplete="off">
+        <div class="spinner-icon">
+        <i class="fas fa-spin fa-spinner"></i>
+        </div>
+        <div class="suggestion" style="display: none;">
+        </div>
+        </div>
+        <div class="input-group-append search-button-wrapper">
+        <button class="btn btn-orange" type="submit">Search</button>
+        </div>
+        <div class="advanced-search d-none d-sm-block">
+
+        <div class="image">
+            <img src="./istockphoto-1026205392-612x612.jpg" alt="" height="200PX" width="300PX"><br>
+            <a href="https://arjun658.github.io/realestate/buy_details.html">  <h1>Property for Development</h1></a>
+            <h2>$20000</h2>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="listsuggest" style="display: none; top: 330px;"></div>
+        </form>
+</body>
+</html>
